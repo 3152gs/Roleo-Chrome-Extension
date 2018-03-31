@@ -1,0 +1,73 @@
+
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+    <head>
+        <title>Get Reviews</title>
+        <!-- Import Bootstrapp  -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="jquery-3.3.1.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        
+        <script src="popup.js"></script>
+
+
+    </head>
+    <style type="text/css">
+        body, html {
+            height:300px;
+            width: 350px;
+        }
+        #titleLine{
+            background-color: #7CB0EA;
+        }
+        #result {
+            position: absolute;
+            width: 100%;
+            max-width:870px;
+            cursor: pointer;
+            overflow-y: auto;
+            max-height: 400px;
+            box-sizing: border-box;
+            z-index: 1001;
+        }
+    </style>
+    <body>
+        <div class = "container-fluid">
+            <div class = "row" id = "titleLine">
+                <h2 class="text-center" > Get Reviews </h2>  
+
+            </div> 
+            <div class="row">
+                <img src="roleo original small.jpeg" class="img-responsive">
+            </div>      
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                    <input type="text" name = "search" id = "search" placeholder="Search for reviews..." class = "form-control"/> 
+                    <ul class = "list-group" id = "result"> </ul>
+                </br>
+            </div><!-- /.col-lg-6 -->
+        </div>
+
+        <div class = "row" >
+                <h4 class="text-center" > Add Review </h4>  
+
+                <span class="input-group-btn text-center" >
+                    <button class="btn btn-default" id = "search_btn" type="button">
+                        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+                    </button> 
+                </span>   
+            </div> 
+
+    </body>
+</html>
