@@ -1,0 +1,42 @@
+body, html {
+            
+    height:450px;
+    width:350px;
+    overflow: auto;
+    background: #f2f2f2;
+}
+#titleLine{
+    background: #f2f2f2;
+    border-radius: 2px;
+    align-content: center;
+}
+.title{
+    text-align: center;
+    width: 100%;
+}
+#result {
+    position: absolute;
+    width: 100%;
+    max-width:870px;
+    cursor: pointer;
+    overflow-y: auto;
+    max-height: 400px;
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+.search-bar{
+    position: relative;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+.bottom-nav{
+    padding-top: 40px;
+}
+#roleoLogo{
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

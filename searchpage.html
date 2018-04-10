@@ -1,0 +1,66 @@
+
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+    <head>
+        <!-- <title>Get Reviews</title> -->
+        <!-- Import Bootstrapp  -->
+        <!-- Latest compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- jQuery library -->
+        <script src="jquery-3.3.1.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+        
+        <!-- <script src="popup.js"></script> -->
+        <script src="searchpage.js"></script>
+        <script type="text/javascript" src= "fontawesome-all.js"></script>
+        <style type="text/css" href="style.css"></style>
+    </head>
+    
+    <body>
+        <div class = "container-fluid">
+            <div class = "row border-bottom" id = "titleLine">
+                <h2 class="text-center title" > Roleo </h2>  
+              
+            </div>
+        </div>
+
+        <section id = "main-content">
+            <div class="row" >
+                <img src="R-icon.png" class="img-fluid rounded " id = "roleoLogo">
+            </div>      
+    
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" name = "search" id = "search" placeholder="Search for reviews..." class = "form-control"> 
+                    <ul class = "list-group" id = "result"> </ul>
+                    <br/>
+                </div><!-- /.col-lg-6 -->
+            </div>
+       </section>
+       
+        <section>
+            <div class="row bottom-nav">
+                <nav class="nav fixed-bottom nav-pills nav-justified navbar-light bg-light">
+                    <a class="nav-item nav-link " href="homepage.html">
+                        <i class="fa fa-home fa-lg"></i>
+                    </a>
+                    <a class="nav-item nav-link active" href="searchpage.html">
+                        <i class="fa fa-lg fa-search"></i>
+                    </a>
+                    <a class="nav-item nav-link" href="userpage.html">
+                        <i class="fa fa-lg fa-user"></i>
+                    </a>
+                </nav>
+            </div>
+        </section>
+    </body>
+</html>
